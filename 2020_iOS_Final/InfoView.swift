@@ -136,6 +136,7 @@ struct InfoView: View {
                     .frame(height: rowHeight)
                     
                 }
+ 
                 
             }
             .navigationBarTitle("Setting", displayMode: .inline)
@@ -144,11 +145,12 @@ struct InfoView: View {
             }) {
                 Image(systemName: "plus.circle.fill")
             })
-                .sheet(isPresented: $showEditExp) {
-                    NavigationView {
-                        ExpEditor(expsData: self.expsData).environment(\.managedObjectContext, self.managedObjectContext)
-                    }
+                
             }
+        .sheet(isPresented: $showEditExp) {
+        NavigationView {
+            ExpEditor(expsData: self.expsData).environment(\.managedObjectContext, self.managedObjectContext)
+        }
         }
     }
     

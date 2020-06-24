@@ -51,30 +51,6 @@ class APIManager: ObservableObject {
         gethufCharsList()
         getravCharsList()
         getslyCharsList()
-        
-        /*
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-
-        let url = documentsDirectory.appendingPathComponent("starChar")
-        
-        if let data = try? Data(contentsOf: url) {
-            let decoder = JSONDecoder()
-            if let decodedData = try? decoder.decode([Character].self, from: data) {
-                characters = decodedData
-            }
-        }
-        
-        cancellable = $characters
-            .sink { (value) in
-                let encoder = JSONEncoder()
-                do {
-                    let data = try encoder.encode(value)
-                    try? data.write(to: url)
-                } catch {
-                    
-                }
-        }
-        */
     }
     
     func getMovieList() {
