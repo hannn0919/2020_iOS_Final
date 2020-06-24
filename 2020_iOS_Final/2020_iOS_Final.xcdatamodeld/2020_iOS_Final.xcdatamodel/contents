@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ExpItems" representedClassName="ExpItems" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="des" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="star" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="ExpItems" positionX="-54" positionY="-9" width="128" height="118"/>
+    </elements>
+</model>
